@@ -2,7 +2,7 @@ var express=require('express')
 var path=require('path')
 var app=express()
 var alfa=express.Router()
-var port=process.env.port || 8082
+var port=process.env.PORT || 8082
 
 app.use(express.static(__dirname+'/'))
 alfa.get('/',function(req,res){
