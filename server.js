@@ -7,7 +7,7 @@ var port=process.env.PORT || 8082
 app.use(express.static(__dirname+'/'))
 alfa.get('/',function(req,res){
 
-	res.sendFile(path.join(__dirname+'index.html'))
+	res.sendFile(path.join(__dirname+'/index.html'))
 });
 
 alfa.get('/movies',function(req,res){
